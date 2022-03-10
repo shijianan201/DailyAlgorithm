@@ -11,3 +11,13 @@ class ListNode(val `val`: Int, var next: ListNode? = null) {
     }
 
 }
+
+fun IntArray.toListNode():ListNode?{
+    val pre = ListNode(1)
+    var head:ListNode? = pre
+    this.forEach {
+        head?.next = ListNode(it)
+        head = head?.next
+    }
+    return pre.next
+}
