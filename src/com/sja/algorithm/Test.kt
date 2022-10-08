@@ -12,7 +12,8 @@ object Test {
     fun main(args: Array<String>) {
         val algorithmList = arrayListOf<Algorithm>(
             Algorithm(1, "LeetCode", "com.sja.algorithm.leetcode.LeetCode_"),
-            Algorithm(2, "Daily", "com.sja.algorithm.daily.Daily_")
+            Algorithm(2, "Daily", "com.sja.algorithm.daily.Daily_"),
+            Algorithm(3,"剑指offer","com.sja.algorithm.jzoffer.JzOffer_")
         )
         while (true) {
             println("支持的算法集编号如下：")

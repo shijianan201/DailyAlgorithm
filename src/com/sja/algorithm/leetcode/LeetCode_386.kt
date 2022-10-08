@@ -1,21 +1,20 @@
 package com.sja.algorithm.leetcode
 
 import com.sja.algorithm.IAlgorithmExecutor
-import kotlin.math.min
 
-class LeetCode_440 : IAlgorithmExecutor {
+class LeetCode_386 : IAlgorithmExecutor {
 
     override fun execute() {
-        val res = findKthNumber(13, 2)
-        println(res)
+        val res = lexicalOrder(13)
+        println(res.joinToString(","))
     }
 
-    fun findKthNumber(n: Int, k: Int): Int {
+    fun lexicalOrder(n: Int): List<Int> {
         val res = ArrayList<Int>()
         for (i in 1..9) {
             dfs(res, n, i)
         }
-        return res.get(k-1)
+        return res
     }
 
     fun dfs(res: ArrayList<Int>, n: Int, parentNum: Int) {

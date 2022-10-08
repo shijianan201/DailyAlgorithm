@@ -12,16 +12,7 @@ class LeetCode_98 : IAlgorithmExecutor {
     }
 
     fun isValidBST(root: TreeNode?): Boolean {
-        if(root == null){
-            return true
-        }
-        val left = root.left
-        val right = root.right
-        val leftRes = if(left == null) true else left.`val` <= root.`val`
-        val rightRes = if(right == null) true else right.`val` >= root.`val`
-        if(!leftRes || !rightRes){
-            return false
-        }
-        return leftRes && rightRes && isValidBST(root.left) && isValidBST(root.right)
+        return true
     }
+
 }
