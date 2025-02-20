@@ -1,10 +1,7 @@
 package com.sja.algorithm.leetcode
 
 import com.sja.algorithm.IAlgorithmExecutor
-import sun.rmi.runtime.Log
 import java.util.*
-import kotlin.math.abs
-import kotlin.math.min
 
 class LeetCode_821 : IAlgorithmExecutor {
 

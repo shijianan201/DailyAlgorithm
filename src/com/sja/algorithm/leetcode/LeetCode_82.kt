@@ -35,7 +35,7 @@ class LeetCode_82 : IAlgorithmExecutor {
                 sameCount = 0
             } else {
                 sameCount++
-                current = current.next
+                current = current!!.next
             }
         }
         currentStart?.next  = current
